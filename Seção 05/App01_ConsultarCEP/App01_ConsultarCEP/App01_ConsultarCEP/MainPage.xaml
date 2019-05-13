@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App01_ConsultarCEP"
+             x:Class="App01_ConsultarCEP.MainPage">
+
+    <!-- O Padding gera distância do elemento pai que é o StackLayout e os filhos que são os elementos dentro dele-->
+    <!-- O Spacing gera um espaço entre os elementos dentro do StackLayout -->
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
+
+
+        <!-- x:Name = Variável ou identifador do objeto instanciado -->
+        <Image Source="LogoCorreios.png" x:Name="LOGO" />
+        <!-- O Placeholder abaixo permite exibir um texto e sumir quando digitar algo-->
+        <Entry Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+        <!-- Ver no Code-Behind deste arquivo o evento do x:Name="BOTAO" -->
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#00416B" x:Name="BOTAO"/>
+
+        <Label Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" x:Name="RESULTADO" />
+    </StackLayout>
+
+</ContentPage>
